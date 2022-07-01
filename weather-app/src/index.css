@@ -8,6 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* app backgrounds */
+
 .app {
   background-image: url(./assets/sun.jpg);
   background-size: cover;
@@ -15,9 +17,59 @@ body {
   transition: 0.4s ease-out;
 }
 
-.app.cold{
-  background-image: url(./assets/cold.jpg);
+.app.cloud{
+  background-image: url(./assets/cloud.jpg);
 }
+
+.app.rain {
+  background-image: url(./assets/rain.jpg);
+}
+
+.app.storm{
+  background-image: url(./assets/storm.jpg);
+}
+
+.app.drizzle{
+  background-image: url(./assets/drizzle.jpg);
+}
+
+.app.snow{
+  background-image: url(./assets/snow.jpg);
+}
+
+.app.mist{
+  background-image: url(./assets/mist.jpg);
+}
+
+.app.smoke{
+  background-image: url(./assets/smoke.jpg);
+}
+
+.app.haze{
+  background-image: url(./assets/haze.jpg);
+}
+
+.app.dust{
+  background-image: url(./assets/dust.jpg);
+}
+
+.app.fog{
+  background-image: url(./assets/fog.jpg);
+}
+
+.app.sand{
+  background-image: url(./assets/sand.jpg);
+}
+
+.app.ash{
+  background-image: url(./assets/ash.jpg);
+}
+
+.app.clear{
+  background-image: url(./assets/clear.jpg);
+}
+
+/* styling */
 
 main {
   min-height: 100vh;
@@ -99,3 +151,11 @@ main {
   font-weight: 500;
   text-shadow: 3px 3px rgba(50, 50, 75, 0.5);
 }
+
+.feelsLike {
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 2px rgba(50, 50, 75, 0.5);
+  margin: 0;
+}
+
