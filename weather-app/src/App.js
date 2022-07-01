@@ -37,26 +37,8 @@ function App() {
 
   }
 
-  // const backgroundWeather = () => {
-  //     (weather.weather[0].main === 'ash') ? 'ash' :
-  //     (weather.weather[0].main === 'clear') ? 'clear' :
-  //     (weather.weather[0].main === 'cloud') ? 'cloud' :
-  //     (weather.weather[0].main === 'drizzle') ? 'drizzle' :
-  //     (weather.weather[0].main === 'dust') ? 'dust' :
-  //     (weather.weather[0].main === 'fog') ? 'fog' :
-  //     (weather.weather[0].main === 'freezing') ? 'freezing' :
-  //     (weather.weather[0].main === 'haze') ? 'haze' :
-  //     (weather.weather[0].main === 'mist') ? 'mist' :
-  //     (weather.weather[0].main === 'rain') ? 'rain' :
-  //     (weather.weather[0].main === 'sand') ? 'sand' :
-  //     (weather.weather[0].main === 'smoke') ? 'smoke' :
-  //     (weather.weather[0].main === 'snow') ? 'snow' :
-  //     (weather.weather[0].main === 'thunderstorm') ? 'storm' :
-  //     'clear'
-  // }
-
   return (
-    <div className={(typeof weather.weather[0].main != 'undefined') ?(
+    <div className= {(typeof weather.main != 'undefined') ?(
       (weather.weather[0].main.toLowerCase() === 'ash') ? 'app ash' :
       (weather.weather[0].main.toLowerCase() === 'clear') ? 'app clear' :
       (weather.weather[0].main.toLowerCase() === 'clouds') ? 'app cloud' :
