@@ -84,7 +84,11 @@ function App() {
             </div>
           </div>
         </div>
-        ) : ('')}
+        ) : (
+          <div className='default'>
+            Please enter a city in the search bar
+          </div>
+        )}
       </main>
     </div>
   );

@@ -159,3 +159,19 @@ main {
   margin: 0;
 }
 
+.default {
+  background:-webkit-linear-gradient(right, rgba(255,255,255,0), #fff 10%, #fff 90%, rgba(255,255,255,0));
+  background:   -moz-linear-gradient(right, rgba(255,255,255,0), #fff 10%, #fff 90%, rgba(255,255,255,0));
+  background:        linear-gradient(to right, rgba(255,255,255,0), #fff 10%, #fff 90%, rgba(255,255,255,0));
+  color:#26272b;
+  font-size: 30px;
+  line-height: 1.3;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+
+}
