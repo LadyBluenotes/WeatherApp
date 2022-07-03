@@ -37,6 +37,28 @@ function App() {
 
   }
 
+  const windDirection = (degrees) => {
+    if (degrees > 337.5 || degrees <= 22.5) {
+      return 'N';
+    } else if (degrees > 22.5 && degrees <= 78.75) {
+      return 'NE';
+    } else if (degrees > 78.75 && degrees <= 123.75) {
+      return 'E';
+    } else if (degrees > 123.75 && degrees <= 168.75) {
+      return 'SE';
+    } else if (degrees > 168.75 && degrees <= 213.75) {
+      return 'S';
+    } else if (degrees > 213.75 && degrees <= 258.75) {
+      return 'SW';
+    } else if (degrees > 258.75 && degrees <= 303.75) {
+      return 'W';
+    } else if (degrees > 303.75 && degrees <= 348.75) {
+      return 'NW';
+    } else {
+      return 'N';
+    }
+  }
+
   return (
     <div className= {(typeof weather.main != 'undefined') ?(
       (weather.weather[0].main.toLowerCase() === 'ash') ? 'app ash' :
@@ -76,17 +98,21 @@ function App() {
             <div className="temp">
               <div className="weather">{weather.weather[0].main}</div>
               <span>{Math.round(weather.main.temp)}°c</span>
-              <div className='feelsLike'>Feels like {Math.round(weather.main.feels_like)}°c</div>
-              
+              <div className='details'>
+                Real Feel: <span>{Math.round(weather.main.feels_like)}°c</span>
+                Humidity: <span>{weather.main.humidity}%</span>
+                Wind: <span>{Math.round(weather.wind.speed)} km/h {windDirection(weather.wind.deg)}</span>
+                </div>
             </div>
-            <div>
-              
+            <div className='details'>
+              <div></div>
+              <div></div>
             </div>
           </div>
         </div>
         ) : (
           <div className='default'>
-            Please enter a city in the search bar
+            Please enter a city in the search bar.
           </div>
         )}
       </main>
