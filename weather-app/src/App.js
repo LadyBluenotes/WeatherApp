@@ -18,7 +18,7 @@ function App() {
         setWeather(result);
         setQuery('');
       })
-      .error(err => {
+      .catch(err => {
         console.log(err);
       });
     }

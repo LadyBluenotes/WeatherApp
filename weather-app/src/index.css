@@ -13,7 +13,7 @@ body {
 .app {
   background-image: url(./assets/sun.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   transition: 1.5s ease-out;
 }
 
