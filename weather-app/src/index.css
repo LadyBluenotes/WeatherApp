@@ -19,54 +19,67 @@ body {
 
 .cloud{
   background-image: url(./assets/cloud.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.rain {
   background-image: url(./assets/rain.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.storm{
   background-image: url(./assets/storm.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.drizzle{
   background-image: url(./assets/drizzle.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.snow{
   background-image: url(./assets/snow.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.mist{
   background-image: url(./assets/mist.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.smoke{
   background-image: url(./assets/smoke.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.haze{
   background-image: url(./assets/haze.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.dust{
   background-image: url(./assets/dust.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.fog{
   background-image: url(./assets/fog.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.sand{
   background-image: url(./assets/sand.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.ash{
   background-image: url(./assets/ash.jpg);
+  transition: 1.5s ease-in;
 }
 
 .app.clear{
   background-image: url(./assets/clear.jpg);
+  transition: 1.5s ease-in;
 }
 
 /* styling */
